@@ -28,5 +28,5 @@ var car = {//object is identified with curly brace
   model: 'g37',
   year: 2010 //last property doesnt end in a comma
 };
-var number = 0xFF;
-console.log(number);//object.property
+
+console.log(car.model);//object.property
