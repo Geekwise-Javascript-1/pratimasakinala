@@ -9,9 +9,16 @@ alert(confirmName);
 
 //below is home assignment
 var data = prompt('enter something');
-if(data.length>0){
+/*if(data.length>0){
   alert('you entered: ' + data);
   console.log('you entered: ' + data);
 }else{
   alert('You have to enter something');
+}*/
+
+if(data == null || data == ''){
+  alert('You have to enter something');
+}else{
+  alert('You entered: ' + data);
+  console.log('You entered: ' + data);
 }
