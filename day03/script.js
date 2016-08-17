@@ -37,12 +37,14 @@ function setBirthday(first, last, color, date){ //parameteres
   var toDay = new Date; //('06/13/1990') is the easy way of assigning date
 
   toDay.setFullYear(1990);
-  toDay.setMonth(06); // 0 based. so if actual month is 7th you put 6
-  toDay.setDate(13); // 0 based. so if actual date is 13th you put 12
+  toDay.setMonth(6); // 0 based. so if actual month is 7th you put 6
+  toDay.setDate(13);
 
   var fullMonth = toDay.toLocaleString(locale , {month : 'long'})
 
-  /*console.log(name
+  /*console.log(firstName
+              + ' '
+              + lastName
               + '.'
               + fullMonth
               + ' '
