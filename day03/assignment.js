@@ -11,7 +11,7 @@ function getUserResp(){
 /*
  function to capitalize first letter.
  check if user has entered anything or not.
- if not entered, ask again.
+ if not entered, ask again untill entered or cancelled.
  if entered, check if user entered string or number.
  if input is a number, print it as it is in console.
  if input is a string, check for the number of words entered.
