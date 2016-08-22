@@ -13,7 +13,7 @@ hello();
 
 function getUserName(){
   var userName = prompt('what is your username?');
-  userName = checkUserName(userName);
+  checkUserName(userName);
 }
 
 function craftMsg(name){
