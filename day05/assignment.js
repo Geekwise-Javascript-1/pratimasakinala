@@ -5,8 +5,8 @@ var box = document.getElementById('box');
 
 function btnClick(){
   input1 = 'Hello javascript!';
+  document.getElementById('input1').value = input1;
   alert(input1);
-  console.log(input2);
   document.getElementById('box').innerHTML = input2;
 }
 
