@@ -16,10 +16,6 @@ function appendElement(){
   inputEl.type = 'text';
   inputEl.id = 'newId' + i;
 
-  console.log(inputEl.name);
-  console.log(inputEl.id);
-  console.log(inputEl);
-
   form.insertBefore(inputEl, submitBtn);
 }
 
