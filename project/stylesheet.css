@@ -1,0 +1,194 @@
+#loginForm{
+  margin: 0 auto;
+  width: 400px;
+  background-color: #f5f5dc;
+  padding: 30px 40px;
+  border-radius: 10px;
+  color: black;
+  font-family: fantasy;
+}
+
+h2{
+  margin-top: 10px;
+  font-size: 35px;
+  font-family: Comic Sans MS, cursive; sans-serif;
+  color: white;
+}
+
+#welcome{
+  color: #00cc88;
+}
+
+label{
+  display: block;
+  margin-bottom: 10px;
+  border: none;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+/*style the header*/
+.header{
+  background-color: #00cc88;
+  padding: 30px 40px;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  font-family: Comic Sans MS, cursive; sans-serif;
+}
+
+/*clear floats after the form*/
+.header:after{
+  content: '';
+  display: table;
+  clear: both;
+}
+
+span{
+  word-spacing: 0.25em;
+}
+
+.wr:hover, .wr1:hover, #welcome:hover .wr, #welcome:hover .wr1,
+.red:hover, .red1:hover, .header:hover .red, .header:hover .red1{
+  background-color: inherit;
+  color: #db0f0f;
+}
+
+.wo:hover, .wo1:hover, #welcome:hover .wo, #welcome:hover .wo1,
+.orange:hover, .orange1:hover, .header:hover .orange, .header:hover .orange1{
+  background-color: inherit;
+  color: #ffb710;
+}
+
+.wy:hover, .wy1:hover, #welcome:hover .wy, #welcome:hover .wy1,
+.yellow:hover, .yellow1:hover, .header:hover .yellow, .header:hover .yellow1{
+  background-color: inherit;
+  color: #f5d800;
+}
+
+.wg:hover, .wg1:hover, #welcome:hover .wg, #welcome:hover .wg1,
+.green:hover, .green1:hover, .header:hover .green, .header:hover .green1{
+  background-color: inherit;
+  color: #008000;
+}
+
+.wb:hover, .wb1:hover, #welcome:hover .wb, #welcome:hover .wb1,
+.blue:hover, .blue1:hover, .header:hover .blue, .header:hover .blue1{
+  background-color: inherit;
+  color: #139fb4;
+}
+
+.wi:hover, .wi1:hover, #welcome:hover .wi, #welcome:hover .wi1,
+.indigo:hover, .indigo1:hover, .header:hover .indigo, .header:hover .indigo1{
+  background-color: inherit;
+  color: #1251af;
+}
+
+.wv:hover, .wv1:hover, #welcome:hover .wv, #welcome:hover .wv1,
+.violet:hover, .violet1:hover, .header:hover .violet, .header:hover .violet1{
+  background-color: inherit;
+  color: #5c12af;
+}
+
+
+/*style the input*/
+#myInput{
+  border: none;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+  font-family: Comic Sans MS, cursive; sans-serif;
+}
+
+input{
+  display: block;
+  /*border: 1px solid black;*/
+}
+
+/*style the add button*/
+.addBtn{
+  padding: 10px;
+  width: 25%;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/*style the add button on hover*/
+.addBtn:hover{
+  background-color: #bbb;
+}
+
+/*style the ul*/
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+/*style the li*/
+ul li{
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: #eee;
+  font-size: 18px;
+  font-family: fantasy;
+  transition: 0.2s;
+
+  /*make the list item unselectable*/
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/*set all odd list items to a different color*/
+ul li:nth-child(odd){
+  background: #f9f9f9;
+}
+
+/*darker background-color on hover*/
+ul li:hover{
+  background: #ddd;
+}
+
+/*when clicked on, add a background-color*/
+ul li.checked{
+  background: #888;
+  color: #fff;
+  text-decoration: underline;
+}
+
+/*style the edit button*/
+#btn{
+  position: absolute;
+  border: none;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+#btn:hover{
+  background-color: #00cc00;
+  color: white;
+}
+
+/*style the close button*/
+.close{
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 9px 12px 9px 12px;
+  border: none;
+}
+
+.close:hover{
+  background-color: #f44336;
+  color: white;
+}

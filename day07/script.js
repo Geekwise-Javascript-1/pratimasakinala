@@ -34,14 +34,14 @@ link.addEventListener('click', function(e){
 });
 */
 
-/*
+
 addEventListener('keydown', function(e){
   console.log(e);
   if(e.keyCode == 86){
     document.body.style.backgroundColor = 'violet';
   }
 });
-
+/*
 addEventListener('keyup', function(e){
   if(e.keyCode == 86){
     document.body.style.backgroundColor = '';
