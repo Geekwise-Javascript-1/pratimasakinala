@@ -1,7 +1,7 @@
 #loginForm{
   margin: 0 auto;
   width: 400px;
-  background-color: #f5f5dc;
+  background-color: #f5f5dc;/*#1a1a1a;*/
   padding: 30px 40px;
   border-radius: 10px;
   color: black;
@@ -11,12 +11,16 @@
 h2{
   margin-top: 10px;
   font-size: 35px;
-  font-family: Comic Sans MS, cursive; sans-serif;
+  font-family: Georgia, serif;
+  /*font-family: Comic Sans MS, cursive; sans-serif;*/
   color: white;
+  letter-spacing: -5px;
+
 }
 
 #welcome{
   color: #00cc88;
+  letter-spacing: normal;
 }
 
 label{
@@ -44,10 +48,6 @@ label{
   content: '';
   display: table;
   clear: both;
-}
-
-span{
-  word-spacing: 0.25em;
 }
 
 .wr:hover, .wr1:hover, #welcome:hover .wr, #welcome:hover .wr1,
@@ -163,7 +163,7 @@ ul li:hover{
 ul li.checked{
   background: #888;
   color: #fff;
-  text-decoration: underline;
+  /*text-decoration: underline;*/
 }
 
 /*style the edit button*/
