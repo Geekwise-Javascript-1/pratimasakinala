@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<body>
+<!--
+<p>Click the first button alert "Hello" after waiting 3 seconds.</p>
+<p>Click the second button to prevent the first function to execute. (You must click it before the 3 seconds are up.)</p>
+
+<button onclick="myFunction()">Try it</button>
+<button onclick="myStopFunction()">Stop the alert</button>
+-->
+<script>
+/*
+var p = "<p>This is 'myWindow'</p>";
+function openWin() {
+ 		var myWindow = window.open("", "myWindow", "width=200, height=100");
+		myWindow.document.write(p);
+		setTimeout(function(){ myWindow.close() }, 3000);
+}
+
+openWin();
+*/
+
+var myVar = "";
+var btn = "<button onclick='closeWin()'>Close my window</button>";
+window.document.write(btn);
+var p = "<p>This is 'myWindow'</p>";
+openWin();
+
+function openWin() {
+     var myWindow = window.open("", "myWindow", "width=200, height=100");
+      myWindow.document.write(p);
+      myVar = setTimeout(function(){ myWindow.close() }, 10000);
+ }
+
+function closeWin() {
+    clearTimeout(myVar);
+}
+
+/*
+var btn = "<button onclick='stopColor()'>Stop Toggle</button>";
+window.document.write(btn);
+
+var myVar = setInterval(function(){ setColor() }, 500);
+
+function setColor() {
+  var x = document.body;
+  x.style.backgroundColor = x.style.backgroundColor == "white" ? "blue" : "white";
+}
+
+function stopColor() {
+  clearInterval(myVar);
+}*/
+</script>
+
+</body>
+</html>

@@ -50,6 +50,7 @@ label{
   clear: both;
 }
 
+/*style the header letters to show different colors on hover */
 .wr:hover, .wr1:hover, #welcome:hover .wr, #welcome:hover .wr1,
 .red:hover, .red1:hover, .header:hover .red, .header:hover .red1{
   background-color: inherit;
@@ -93,7 +94,7 @@ label{
 }
 
 
-/*style the input*/
+/*style the input box*/
 #myInput{
   border: none;
   width: 75%;
@@ -105,7 +106,6 @@ label{
 
 input{
   display: block;
-  /*border: 1px solid black;*/
 }
 
 /*style the add button*/
@@ -163,20 +163,6 @@ ul li:hover{
 ul li.checked{
   background: #888;
   color: #fff;
-  /*text-decoration: underline;*/
-}
-
-/*style the edit button*/
-#btn{
-  position: absolute;
-  border: none;
-  top: 0;
-  padding: 12px 16px 12px 16px;
-}
-
-#btn:hover{
-  background-color: #00cc00;
-  color: white;
 }
 
 /*style the close button*/

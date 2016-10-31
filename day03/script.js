@@ -8,7 +8,7 @@ console.log(str);
 */
 
 /*     Math objects
-var randNum = Math.random(); //gives a 15 digit random number between 0 and 1
+var randNum = Math.random(); //gives a random number between 0 and 1
 var randNum = Math.round(Math.random());
 var randNum = Math.floor(Math.random() * 10) + 1; // .floor() rounds the value down
 console.log(randNum);

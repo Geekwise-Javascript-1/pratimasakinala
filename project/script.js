@@ -33,10 +33,10 @@ function createLoginForm(repeat){//parameter 'repeat' refers to check if the use
                     '<span class="wr">W</span><span class="wo">e</span><span class="wy">l</span><span class="wg">c</span><span class="wb">o</span><span class="wi">m</span><span class="wv">e</span><span>&nbsp;</span><span class="wr1">t</span><span class="wo1">o</span><span>&nbsp;</span><span class="wy1">T</span><span class="wg1">o</span><span class="wb1">D</span><span class="wi1">o</span><span class="wv1">!</span>'+
                   '</h2>'+
                   '<label for="user">Username:'+
-                    '<input type="text" id="user" value="pratima">'+
+                    '<input type="text" id="user" value="'+user+'">'+
                   '</label>'+
                   '<label for="pass">Password:'+
-                    '<input type="password" id="pass" value="sakinala">'+
+                    '<input type="password" id="pass" value="">'+
                   '</label>'+
                   '<input type="submit" value="Login">'+
                   '</form>';
@@ -115,6 +115,7 @@ function addNewItem(){
   }
   else{
     setToDoStorage(inp.value);
+    removeAllList();
     createNewListItem(inp.value);
   }
   document.getElementById('btnMain').innerHTML = 'Add';
@@ -196,6 +197,26 @@ function removeListElementBtn(li, key){
       closeBtn.className = 'close';
       closeBtn.setAttribute("onclick", "removeListHandler(this, " + key + ")");
       li.appendChild(closeBtn);
+}
+
+/*function to add remove all button*/
+function removeAllList(){
+  console.log('entered removeAllList');
+  var items = checkToDoStorage();
+  if(items.length>=2){
+    var removeAllBtn = document.createElement('input');
+        removeAllBtn.value = 'Delete all';
+        removeAllBtn.type = 'button';
+        removeAllBtn.id = 'removeAllBtn';
+        removeAllBtn.className = 'removeAllBtn';
+        removeAllBtn.setAttribute('onclick', function(e){
+          e.preventDefault();
+          localStorage.removeItem('todo');
+        });
+    document.getElementById('todo').appendChild(removeAllBtn);
+  }else {
+    return;
+  }
 }
 
 /* function to remove li when clicked on close button */

@@ -12,37 +12,40 @@
     <div id='login'>
     </div>
 
-    <div id='myDiv' class='header'>
-        <h2 id='header'><!-- Welcome to ToDo-->
-          <span class='red'>W</span>
-          <span class='orange'>e</span>
-          <span class='yellow'>l</span>
-          <span class='green'>c</span>
-          <span class='blue'>o</span>
-          <span class='indigo'>m</span>
-          <span class='violet'>e</span>
-          <span>&nbsp;</span>
-          <span class='red1'>t</span>
-          <span class='orange1'>o</span>
-          <span>&nbsp;</span>
-          <span class='yellow1'>T</span>
-          <span class='green1'>o</span>
-          <span class='blue1'>D</span>
-          <span class='indigo1'>o</span>
-          <span class='violet1'>!</span>
-        </h2>
-        <div id="divInputPanel">
-            <input type='text'
-                   id='myInput'
-                   name='todo'
-                   placeholder='Click to enter a Title'
-                   value=''
-                   onkeyup="handleEnterKey(event)" />
-            <span onclick='addNewItem()' id="btnMain" class='addBtn'>Add</span>
-        </div>
-    </div>
-    <ul id='ul'>
-    </ul>
+    <form id='todo'>
+        <div id='myDiv' class='header'>
+          <h2 id='header'><!-- Welcome to ToDo-->
+            <span class='red'>W</span>
+            <span class='orange'>e</span>
+            <span class='yellow'>l</span>
+            <span class='green'>c</span>
+            <span class='blue'>o</span>
+            <span class='indigo'>m</span>
+            <span class='violet'>e</span>
+            <span>&nbsp;</span>
+            <span class='red1'>t</span>
+            <span class='orange1'>o</span>
+            <span>&nbsp;</span>
+            <span class='yellow1'>T</span>
+            <span class='green1'>o</span>
+            <span class='blue1'>D</span>
+            <span class='indigo1'>o</span>
+            <span class='violet1'>!</span>
+          </h2>
+          <div id="divInputPanel">
+              <input type='text'
+                     id='myInput'
+                     name='todo'
+                     placeholder='Click to enter a Title'
+                     value=''
+                     onkeyup="handleEnterKey(event)" />
+              <span onclick='addNewItem()' id="btnMain" class='addBtn'>Add</span>
+          </div>
+      </div>
+      <ul id='ul'>
+      </ul>
+  </form>
+
 
   <script src='script.js'></script>
   <script src='md5.js'></script>
