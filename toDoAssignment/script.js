@@ -1,6 +1,6 @@
 ( function (){
-  var todo =[];
-  var item = prompt('Enter your first todo item');
+  var todo =[],
+    item = prompt('Enter your first todo item');
 
   if( isValid(item, true) ){
     addToDo(item);
